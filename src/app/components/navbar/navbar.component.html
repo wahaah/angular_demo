@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <!--navbar-inverse是bootstrap3.0, 4.0版本换为navbar-dark bg-dark -->
+  <div class="container">
+    <div class="navbar-header">
+      <!--data-target=".navbar-ex2-collapse" 为了能让此处与下边数据关联上  -->
+      <button  class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a href="#" class="navbar-brand">迪丽舍饵丝富德</a> -->
+      <a [routerLink]="[ '/main']" class="navbar-brand">迪丽舍饵丝富德</a>
+      <!-- <a [routerLink]="[ '']" class="navbar-brand">迪丽舍饵丝富德</a> -->
+    </div>
+    <div  class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#"> 陕西</a></li>
+        <li><a href="#"> 浙江</a></li>
+        <!-- <li><a href="#"> 四川</a></li> -->
+        <!-- <li><a [routerLink]="[ '/app/sichuan']">四川</a></li> -->
+        <li><a [routerLink]="[ '/sichuan']">四川</a></li>
+        <li><a href="#"> 重庆</a></li>
+        <li><a href="#">关于我们</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+        <!-- <router-outlet></router-outlet> -->
